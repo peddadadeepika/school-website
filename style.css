@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    top: 0;
+    display: flex;
+    width: 100%;
+height: 70px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.39);
+    
+}
+header ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-size: 20px;
+    
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+#home{
+margin-top: 5px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20% 23%;
+    background-image: url("img/homeimg.jpg");
+    background-position: center;
+    backdrop-filter: blur(8px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#home h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+}
+#home p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
+#home button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid green;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 10px;
+}
+#home button:hover{
+    background-color: green;
+    color: white;
+}
+#courses{
+    text-align: center;
+    margin-top: 5%;
+}
+.box{
+    display: flex;
+    padding: 30px;
+}
+.card{
+    margin: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    font-family: sans-serif;
+}
+.card h2{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.card p{
+    font-size: 15px;
+}
+#facilities{
+    text-align: center;
+    margin-top: 5%;
+}
+.image{
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+}
+.one{
+    width: 350px;
+    margin: 40px;
+
+}
+#contact{
+text-align: center;
+    margin-top: 5%;
+}
+.form{
+    padding: 5% 15%;
+}
+#contact button{
+    padding: 10px 20px;
+    border: 2px solid green;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 10px;
+}
+#contact button:hover{
+    background-color: green;
+    color: white;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    background-color: rgba(0, 128, 0, 0.5);
+}
+@media only screen and (max-width:850px) {
+    header{
+        width: 100%;
+        justify-content: center;
+    }
+    #home{
+        width: 100%;
+    }
+    header ul{
+    display: none;
+    }
+    .box{
+        flex-wrap: wrap;
+    }
+    .image{
+        flex-wrap: wrap;
+        padding: 8%;
+    }
+    .one{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .image{
+        flex-wrap: wrap;
+    }
+}
